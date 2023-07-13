@@ -32,7 +32,7 @@ function List() {
   return  (
       items.map((item) => <Card header={item.name}
         body= {
-          `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${items.indexOf(item)}.png`
+          `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${items.indexOf(item) + 1}.png`
          }
         ></Card>)
   )
